@@ -1,15 +1,17 @@
-/* Target the root element to define custom properties */
+/* styles/6-style.css */
+
+/* 1. Define custom properties */
 :root {
   --font-weight-regular: 400;
   --font-weight-bold: 700;
 }
 
-/* Set the font weight of body text to regular */
+/* 2. Body uses regular weight */
 body {
   font-weight: var(--font-weight-regular);
 }
 
-/* Set the font weight of headings to bold */
-h1, h2, h3, h4, h5, h6 {
+/* 3. Headings use bold weight */
+h1, h2, h3 {
   font-weight: var(--font-weight-bold);
 }
