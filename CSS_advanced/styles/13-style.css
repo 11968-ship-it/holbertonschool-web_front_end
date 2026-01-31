@@ -1,5 +1,5 @@
 a[href] {
-  font-style: italic;
+  /* Only select links with href, no properties here */
 }
 
 a[href]:visited {
