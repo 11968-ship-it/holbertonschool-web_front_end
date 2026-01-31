@@ -43,16 +43,13 @@ body {
   line-height: var(--line-height-base);
 }
 
-/* Link styling */
+/* Link styling — task 13 */
 
 a[href] {
-  color: var(--text-color);
-  text-decoration: none;
   font-style: italic;
 }
 
 a[href]:visited {
-  font-style: italic;
 }
 
 a[href]:hover {
