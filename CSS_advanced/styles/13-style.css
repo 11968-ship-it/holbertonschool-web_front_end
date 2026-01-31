@@ -43,7 +43,6 @@ body {
   line-height: var(--line-height-base);
 }
 
-/* Updated selector and new link states */
 a[href] {
   color: var(--text-color);
   text-decoration: none;
