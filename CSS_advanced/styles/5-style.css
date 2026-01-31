@@ -3,6 +3,7 @@ html {
 }
 
 :root {
+  /* Colors */
   --color-primary: #d73953;
   --color-black: #090909;
   --color-white: #ffffff;
@@ -10,9 +11,11 @@ html {
   --color-dark-grey: #353535;
   --text-color: var(--color-black);
 
+  /* Font families */
   --font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-family-title: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
+  /* Font sizes */
   --font-size-small: 1.2rem;
   --font-size-medium: 1.6rem;
   --font-size-large: 1.8rem;
@@ -23,7 +26,7 @@ html {
 body {
   color: var(--text-color);
   font-family: var(--font-family-base);
-  font-size: 1.6rem;
+  font-size: var(--font-size-medium);
 }
 
 a {
