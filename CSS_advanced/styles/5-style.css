@@ -1,6 +1,4 @@
-html {
-  font-size: 62.5%;
-}
+/* styles/5-style.css */
 
 :root {
   --font-size-small: 1.2rem;
@@ -8,6 +6,10 @@ html {
   --font-size-large: 1.8rem;
   --font-size-x-large: 2.3rem;
   --font-size-xx-large: 4.8rem;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
