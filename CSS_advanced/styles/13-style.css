@@ -1,15 +1,19 @@
+/* Target only anchor elements containing a hyperlink */
 a[href] {
-  /* Only select links with href, no properties here */
+  font-style: italic;
 }
 
+/* Directly after, target visited state */
 a[href]:visited {
   font-style: italic;
 }
 
+/* Directly after visited, target hover state */
 a[href]:hover {
   text-decoration: underline;
 }
 
+/* Directly after hover, target active state */
 a[href]:active {
   background-color: var(--color-light-grey);
 }
