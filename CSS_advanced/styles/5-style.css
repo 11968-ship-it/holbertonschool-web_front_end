@@ -1,5 +1,5 @@
+/* 1. Custom properties (Variables) */
 :root {
-  /* Colors from previous tasks */
   --color-primary: #d73953;
   --color-black: #090909;
   --color-white: #ffffff;
@@ -7,11 +7,9 @@
   --color-dark-grey: #353535;
   --text-color: var(--color-black);
 
-  /* Font Families from Task 4 */
   --font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-family-title: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-  /* Font Sizes from Task 5 */
   --font-size-small: 1.2rem;
   --font-size-medium: 1.6rem;
   --font-size-large: 1.8rem;
@@ -19,12 +17,12 @@
   --font-size-xx-large: 4.8rem;
 }
 
-/* Base Scaling */
+/* 2. Base Scaling */
 html {
   font-size: 62.5%;
 }
 
-/* Global Styles */
+/* 3. Global Styles */
 body {
   color: var(--text-color);
   font-family: var(--font-family-base);
@@ -35,6 +33,7 @@ a {
   color: var(--text-color);
 }
 
+/* 4. Section & Card Styles */
 .section-tagline {
   color: var(--color-primary);
 }
@@ -43,7 +42,12 @@ a {
   color: var(--color-primary);
 }
 
-/* Heading Styles */
-h1, h2, h3, h4, h5, h6 {
+/* 5. Heading Styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-family-title);
 }
