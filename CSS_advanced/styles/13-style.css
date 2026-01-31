@@ -46,10 +46,12 @@ body {
 /* Link styling — task 13 */
 
 a[href] {
-  font-style: italic;
+  color: var(--text-color);
+  text-decoration: none;
 }
 
 a[href]:visited {
+  font-style: italic;
 }
 
 a[href]:hover {
