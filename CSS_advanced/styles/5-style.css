@@ -3,7 +3,6 @@ html {
 }
 
 :root {
-    /* Added font-size variables for 5-style.css */
   --font-size-small: 1.2rem;
   --font-size-medium: 1.6rem;
   --font-size-large: 1.8rem;
