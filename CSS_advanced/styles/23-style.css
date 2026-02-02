@@ -10,7 +10,7 @@
   display: block;
 }
 
-/* Style the svg children of social-link */
-.social-link svg {
+/* Fill the SVG children of social-link with the text-color variable */
+.social-link > svg {
   fill: var(--text-color);
 }
