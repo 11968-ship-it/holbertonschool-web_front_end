@@ -1,0 +1,23 @@
+/* styles/29-style.css */
+
+/* Step 1: Edit nav-item-link-hover custom property */
+:root {
+  --nav-item-link-hover: var(--color-white);
+}
+
+/* Step 2: Target the before pseudo-elements of nav-link inside nav */
+nav .nav-link::before {
+  content: '';                  /* empty content */
+  position: absolute;           /* absolute positioning */
+  top: 0;                       /* vertical position */
+  left: 0;                      /* horizontal position */
+  background-color: var(--color-white); /* background color */
+  width: 0;                     /* initial width */
+  height: 20%;                  /* 20% of root element height */
+}
+
+/* Step 3: Hover state for before pseudo-elements when nav-item is hovered */
+nav .nav-item:hover .nav-link::before {
+  background-color: var(--color-primary); /* change background on hover */
+  width: 100%;                             /* expand to full width */
+}
