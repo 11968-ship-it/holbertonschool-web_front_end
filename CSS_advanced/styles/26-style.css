@@ -1,0 +1,20 @@
+/* styles/26-style.css */
+
+/* Step 1: card-testimonial selector */
+.card-testimonial {
+  text-align: center; /* center align text */
+}
+
+/* Step 2: card-avatar inside card-testimonial */
+.card-testimonial .card-avatar {
+  border-radius: 50%; /* round all sides */
+  width: 10rem;       /* 10x root element */
+  height: 10rem;      /* 10x root element */
+}
+
+/* Step 3: cite inside card-quote inside card-testimonial */
+.card-testimonial .card-quote cite {
+  display: block;                  /* block level */
+  padding-top: 1rem;               /* 1x root element */
+  color: var(--color-primary);     /* foreground color */
+}
