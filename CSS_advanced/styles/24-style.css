@@ -1,0 +1,20 @@
+/* styles/24-style.css */
+
+/* Target card-title inside card-services */
+.card-services .card-title {
+  margin: 0; /* no margin on any side */
+}
+
+/* Target a inside card-services */
+.card-services a {
+  display: block; /* block level element */
+  padding: calc(2 * 1rem); /* 2x root element */
+  background-color: var(--color-light-grey);
+}
+
+/* Hover state of a inside card-services */
+.card-services a:hover {
+  color: var(--color-white); /* foreground color */
+  background-color: var(--color-primary);
+  text-decoration: none; /* no underline */
+}
