@@ -1,9 +1,28 @@
-/* Update this in your :root */
+/* ALL PREVIOUS ROOT VARIABLES */
 :root {
-  --nav-item-link-hover: var(--color-white);
+  --color-primary: #d73953;
+  --color-white: #ffffff;
+  /* ... include all other colors/fonts here ... */
+
+  --nav-item-link-hover: var(--color-white); /* Task 29 Edit */
+  
+  --header-padding: 4rem 0 0;
+  --header-logo-position: relative;
+  --header-logo-link-display: inline-block;
+  --header-logo-link-position: absolute;
+  --header-logo-link-top: -1rem;
+  --header-logo-link-left: 0;
 }
 
-/* Selector 1: The Base State */
+/* PREVIOUS NAV-LINK STYLE (CRITICAL FOR TASK 29) */
+.nav .nav-link {
+  position: relative; /* Must be relative for the absolute pseudo-element to work */
+  /* ... other nav-link styles ... */
+}
+
+/* TASK 29 IMPLEMENTATION */
+
+/* Target before pseudo elements of nav-link inside nav */
 .nav .nav-link:before {
   content: "";
   position: absolute;
@@ -14,8 +33,28 @@
   height: 20%;
 }
 
-/* Selector 2: The Hover State (Check 7) */
+
+
+/* Target before pseudo elements when nav-item is hover */
 .nav .nav-item:hover .nav-link:before {
   background-color: var(--color-primary);
   width: 100%;
+}
+
+
+
+/* ALL OTHER PREVIOUS SELECTORS (.header, .header-logo, etc.) */
+.header {
+  padding: var(--header-padding);
+}
+
+.header-logo {
+  position: var(--header-logo-position);
+}
+
+.header-logo a {
+  display: var(--header-logo-link-display);
+  position: var(--header-logo-link-position);
+  top: var(--header-logo-link-top);
+  left: var(--header-logo-link-left);
 }
