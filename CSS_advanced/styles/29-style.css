@@ -1,24 +1,27 @@
+/* Note: Ensure all previous variables from 1-28 are present above this */
+
 :root {
+  /* ... other variables ... */
   --nav-item-link-hover: var(--color-white);
-  /* other variables... */
 }
 
-/* Fix: make .nav-link the positioning context for the ::before pseudo-element */
-.nav-link {
-  position: relative;
-}
+/* ... other styles ... */
 
+/* Task 29: Navigation Animation with Pseudo-elements */
+
+/* 1. Target the before pseudo-element of nav-link inside nav */
 .nav .nav-link::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: var(--color-white);
-  width: 0;
-  height: 20%;
+  content: ""; /* Set to empty */
+  position: absolute; /* Absolutely position */
+  top: 0; /* Vertical position 0 */
+  left: 0; /* Horizontal position 0 */
+  background-color: var(--color-white); /* Background color white */
+  width: 0; /* Initial width 0 */
+  height: 20%; /* Height 20% of the root element (the link) */
 }
 
+/* 2. Target the before pseudo-element when nav-item is hovered */
 .nav .nav-item:hover .nav-link::before {
-  background-color: var(--color-primary);
-  width: 100%;
+  background-color: var(--color-primary); /* Change background to primary */
+  width: 100%; /* Expand width to 100% */
 }
