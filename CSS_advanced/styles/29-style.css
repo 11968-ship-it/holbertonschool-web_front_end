@@ -3,8 +3,13 @@
   --nav-item-link-hover: var(--color-white);
 }
 
+/* Ensure nav-link is the positioning context */
+nav .nav-link {
+  position: relative;
+}
+
 /* Target the before pseudo-element of nav-link inside nav */
-.nav .nav-link::before {
+nav .nav-link::before {
   content: "";
   position: absolute;
   top: 0;
@@ -14,8 +19,13 @@
   height: 20%;
 }
 
-/* Check 7: Target before pseudo-element when nav-item is hovered */
-.nav .nav-item:hover .nav-link::before {
+/* Target before pseudo-element when nav-item is hovered inside nav */
+nav .nav-item:hover .nav-link::before {
   background-color: var(--color-primary);
   width: 100%;
+}
+
+/* Optional: Apply nav-item-link-hover variable */
+.nav-item-link-hover {
+  color: var(--nav-item-link-hover);
 }
