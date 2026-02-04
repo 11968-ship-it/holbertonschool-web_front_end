@@ -53,4 +53,7 @@
   left: 0;
 }
 
-/* Show title on*
+/* Show title on*/
+.card-work:hover .card-title {
+  opacity: 1;
+}
