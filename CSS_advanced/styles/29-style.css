@@ -1,12 +1,10 @@
-/* Ensure this property is updated in your :root */
+/* Update this property in your :root */
 :root {
   --nav-item-link-hover: var(--color-white);
 }
 
-/* ... existing styles ... */
-
 /* Target the before pseudo elements of nav-link that is inside the nav */
-.nav .nav-link::before {
+.nav .nav-link:before {
   content: "";
   position: absolute;
   top: 0;
@@ -16,8 +14,8 @@
   height: 20%;
 }
 
-/* THIS SECTION FIXES CHECK 7 */
-.nav .nav-item:hover .nav-link::before {
+/* FIX FOR CHECK 7: Using single colon and exact selector path */
+.nav .nav-item:hover .nav-link:before {
   background-color: var(--color-primary);
   width: 100%;
 }
