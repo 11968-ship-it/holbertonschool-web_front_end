@@ -1,9 +1,11 @@
-/* Update the variable as requested */
+/* Ensure this property is updated in your :root */
 :root {
   --nav-item-link-hover: var(--color-white);
 }
 
-/* Target the before pseudo-element of nav-link inside nav */
+/* ... existing styles ... */
+
+/* Target the before pseudo elements of nav-link that is inside the nav */
 .nav .nav-link::before {
   content: "";
   position: absolute;
@@ -14,7 +16,7 @@
   height: 20%;
 }
 
-/* Check 7: Target before pseudo-element when nav-item is hovered */
+/* THIS SECTION FIXES CHECK 7 */
 .nav .nav-item:hover .nav-link::before {
   background-color: var(--color-primary);
   width: 100%;
