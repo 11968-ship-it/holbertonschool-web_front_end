@@ -1,14 +1,12 @@
-/* ... All previous root variables from 28-style.css ... */
-
 :root {
-  /* ... previous variables ... */
   --nav-item-link-hover: var(--color-white);
-  /* ... rest of variables ... */
+  /* other variables... */
 }
 
-/* ... existing styles (html, body, anchors, etc.) ... */
-
-/* Task 29 implementation */
+/* Fix: make .nav-link the positioning context for the ::before pseudo-element */
+.nav-link {
+  position: relative;
+}
 
 .nav .nav-link::before {
   content: "";
@@ -24,5 +22,3 @@
   background-color: var(--color-primary);
   width: 100%;
 }
-
-/* ... rest of your cumulative CSS ... */
