@@ -1,15 +1,9 @@
-/* Ensure all previous styles from Task 1-28 are included above this */
-
+/* Update the variable as requested */
 :root {
-  /* ... existing variables ... */
   --nav-item-link-hover: var(--color-white);
 }
 
-/* ... existing body, nav-link, etc. ... */
-
-/* Task 29: Navigation animation */
-
-/* Target the before pseudo elements of nav-link that is inside the nav */
+/* Target the before pseudo-element of nav-link inside nav */
 .nav .nav-link::before {
   content: "";
   position: absolute;
@@ -20,7 +14,7 @@
   height: 20%;
 }
 
-/* Target the before pseudo elements of nav-link when nav-item is hover and is inside nav */
+/* Check 7: Target before pseudo-element when nav-item is hovered */
 .nav .nav-item:hover .nav-link::before {
   background-color: var(--color-primary);
   width: 100%;
