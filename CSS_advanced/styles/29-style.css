@@ -1,18 +1,9 @@
-/* styles/29-style.css */
-
-/* Step 1: Define color variables */
-:root {
-  --color-whitevariable: #ffffff; /* White for hover text */
-  --color-white: #ffffff;         /* White for pseudo-elements background */
-  --color-primary: #3498db;       /* Primary color for hover effect */
-}
-
-/* Step 2: Nav item hover link color */
+/* Edit nav-item-link-hover property */
 .nav-item-link-hover {
-  color: var(--color-whitevariable);
+  color: var(--color-white);
 }
 
-/* Step 3: Target the before pseudo-elements of nav-link inside nav */
+/* Target the before pseudo-elements of nav-link inside nav */
 nav .nav-link::before {
   content: "";
   position: absolute;
@@ -23,7 +14,7 @@ nav .nav-link::before {
   height: 20%;
 }
 
-/* Step 4: Hover effect for nav-link before pseudo-elements */
+/* Target the before pseudo-elements of nav-link when nav-item is hovered inside nav */
 nav .nav-item:hover .nav-link::before {
   background-color: var(--color-primary);
   width: 100%;
