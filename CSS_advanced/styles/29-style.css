@@ -3,20 +3,24 @@
   --nav-item-link-hover: var(--color-white);
 }
 
-/* ... existing styles ... */
-
 /* Target the before pseudo elements of nav-link that is inside the nav */
 .nav .nav-link::before {
   content: "";
-  position: absolute;
+  position: absolute; /* absolutely position relative to nav-link */
   top: 0;
   left: 0;
   background-color: var(--color-white);
   width: 0;
   height: 20%;
+  transition: width 0.3s ease, background-color 0.3s ease; /* optional but safer */
 }
 
-/* THIS SECTION FIXES CHECK 7 */
+/* Make sure nav-item is relative so ::before is positioned correctly */
+.nav .nav-item {
+  position: relative;
+}
+
+/* Hover effect for nav-link's ::before inside nav-item */
 .nav .nav-item:hover .nav-link::before {
   background-color: var(--color-primary);
   width: 100%;
